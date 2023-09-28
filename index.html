@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Contact Form</title>
+</head>
+<body>
+    <!-- Start - Form -->
+    <div class="container">
+        <h2 class="text-center">Contact me</h2>
+        <form class="contact-form" action="send.php" method="POST">
+
+            <!-- Name input -->
+            <div class="form-group">
+                <input class=" user_name form-control" type="text" name="username" placeholder="please type your name" required>
+                <i class="fa fa-user fa-fw"></i>
+                <span class="asterisx">*</span>
+                <div class="alert alert-danger custom-alert">
+                username must be more than <strong>3</strong> latters
+                </div>
+            </div>
+            
+            <!-- Mobile input -->
+            <input class="form-control" type="text" name="phone" placeholder="please type your mobile number">
+            <i class="fa fa-mobile fa-fw"></i>
+            
+            <!-- Email input -->
+            <div class="form-group">
+                <input class="user_mail form-control" type="email" name="mail" placeholder="please type your email" required>
+                <i class="fa fa-envelope fa-fw"></i>
+                <span class="asterisx">*</span>
+                <div class="alert alert-danger custom-alert">
+                    Email can't be empty
+                </div>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+                <textarea class="user_msg form-control" placeholder="Your Message..." name="msg" required></textarea>
+                <div class="alert alert-danger custom-alert">
+                    please write your messege
+                </div>
+            </div>
+                <input class="btn btn-success" type="submit" value="send messege">
+                <i class="fa-regular fa-paper-plane fa-fw send-icon"></i>
+        </form>
+    </div>
+    <!-- End - Form -->
+
+    <!-- JS Links -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myScript.js"></script>
+</body>
+</html>

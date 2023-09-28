@@ -1,0 +1,67 @@
+/** Global | Start Style **/
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #bdc3c7;
+}
+/** Form | Start Style **/
+h2{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    color: #6c757d;
+}
+
+.contact-form{
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.contact-form .form-group{
+    margin-bottom: 0;
+    position: relative;
+}
+
+.contact-form input{
+    padding-left: 35px;
+}
+
+.contact-form input, .contact-form textarea{
+    margin-bottom: 10px;
+}
+
+.contact-form textarea{
+    height: 150px !important;
+}
+
+.contact-form input:not([type='submit']) + i{
+    height: 0;
+    float: left;
+    position: relative;
+    top: -35px;
+    left: 10px;
+    color:#6c757d
+}
+
+.contact-form .asterisx{
+    font-size: 50px;
+    color: rgb(184, 0, 0);
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}
+
+.contact-form .custom-alert{
+    padding: 5px 10px;
+    display: none;
+}
+
+.contact-form .send-icon{
+    display: block;
+    position: relative;
+    top: -36px;
+    left: 10px;
+    color: #fff;
+}
